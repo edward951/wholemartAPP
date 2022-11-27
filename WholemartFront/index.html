@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register-Wholemart</title>
+    <link rel="stylesheet" href="/Complement/images/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Complement/css/style.css">
+    <script src="https://kit.fontawesome.com/229a386a5d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Complement/images/logoico2.ico">
+</head>
+<body>
+
+    <main>
+    <div class="contenedorTodo">
+<!-- Caja de color princpial del login-->
+        <div class="cajaTrasera">
+            <div class="cajaTraseraLogin">
+                <h3>¿Ya tienes una cuenta?</h3> 
+                <p>Inicia sesión para ingresar a Wholemart</p>
+                <button id="btnIniciarSesion">Iniciar sesión</button>
+            </div>
+ <!-- Caja de color principal del registro -->
+            <div class="cajaTraseraRegister">
+                <h3>¿Aún no tienes una cuenta?</h3> 
+                <p>Regístrate para que puedas iniciar sesión</p>
+                <button id="btnRegistrarse">Registrarse</button>
+            </div>
+        </div>
+ <!-- Formularios -->
+        <div class="contenedorLoginRegister">
+
+<!-- Formulario de loguearse -->
+            <form action="" id="myForm2" class="formularioLogin">
+                <img class="logoLogin" src="/Complement/images/logoLogin.svg" alt="">
+                <h2>Iniciar sesión</h2>
+                <i class="fa-solid fa-envelope"></i>
+                <label for="Correo">Correo electrónico</label>
+                <input id="correoElectronico" name="correoElectronico" type="text" placeholder="Ejemplo123@wholemart.com"required>
+                <i class="fa-solid fa-lock"></i>
+                <label for="Contraseña">Contraseña</label>
+                <input id="password" type="password" name="password" placeholder="Enter the password"required>
+                <div class="btn">
+                    <button type="submit" >Ingresar</button>
+                </div>
+            </form>
+ <!-- Formulario de Registro -->
+            <form id="myForm" class="formularioRegister">
+                <h2>Registrarse</h2>
+                <i class="fa-solid fa-user"></i>
+                <label for="Nombre">Nombre completo</label>
+                <input id="nombreCompleto" name="nombreCompleto" type="text" placeholder="Enter username"required>
+                <i class="fa-solid fa-envelope"></i>
+               <label for="Correo">Correo electrónico</label>
+                <input id="email" name="email" type="email" placeholder="Ejemplo123@wholemart.com"required>
+                <i class="fa-sharp fa-solid fa-user"></i>
+               <label for="Usuario">Nombre de usuario</label>
+                <input id="nombreUsuario" name="nombreUsuario" type="text" placeholder="User"required>
+                <i class="fa-solid fa-lock"></i>
+               <label for="Contraseña">Contraseña</label>
+                <input id="passwordone" name="passwordone" type="password" placeholder="Enter the password"  title="Debe contener minimo 8 caracteres" required>
+                <i class="fa-sharp fa-solid fa-key"></i>
+                <label for="ConfirmarContraseña">Confirme su contraseña</label>
+                <input id="passwordConfirm" name="passwordConfirm" type="password" placeholder="Password confirm"  title="Debe contener minimo 8 caracteres" required>
+                <div class="btn">
+                    <button type="submit">Registrarse</button>
+                </div>
+                
+            </form>
+        </div>
+    </div> 
+</main>
+
+<!--Creación del Footer-->
+<footer>
+    <div class="containerFooter">
+        <div class="boxFooter">
+            <div class="logo">
+                <img src="Complement/images/logo-footer.svg" class="logo">
+            </div>
+            <div class="derechosReservados">
+                <hr>
+                <p>Copyright © 2022 Todos los derechos reservados<b> Wholemart</b></p>
+            </div>
+        </div>
+        <div class="boxFooter">
+            <a href="https://www.facebook.com/edward.fonsek.9/"><i class="fa-brands fa-facebook" ></i>Facebook</a>
+            <a href="https://www.instagram.com/andres_fonseca28/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="https://www.twitch.tv/ilm_reddragon"><i class="fa-brands fa-twitter"></i>Twitter</a>
+        </div>
+    </div>
+</footer>
+<script src="Complement/js/script.js"></script>
+<script src="Complement/js/conexion.js"></script>
+<script src="Complement/js/login.js"></script>
+<!--<script src="Complement/js/Validar.js"></script>-->
+
+</body>
+</html>
